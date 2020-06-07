@@ -10,4 +10,4 @@ touch database/database.sqlite
 
 php artisan migrate
 
-npm run watch
+npm run prod

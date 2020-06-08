@@ -11,23 +11,26 @@
         "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "devDependencies": {
-        "cross-env": "^5.1"
+        "@babel/preset-react": "^7.10.1",
+        "cross-env": "^5.1",
+        "resolve-url-loader": "^3.1.0",
+        "sass": "^1.26.8",
+        "sass-loader": "^8.0.2"
     },
     "dependencies": {
-        "axios": "^0.18",
+        "axios": "^0.18.1",
         "babel-preset-react": "^6.23.0",
-        "bootstrap": "^4.0.0",
-        "cross-env": "^5.1",
-        "jquery": "^3.2",
-        "laravel-mix": "^2.0",
-        "lodash": "^4.17.4",
+        "bootstrap": "^4.5.0",
+        "jquery": "^3.5.1",
+        "laravel-mix": "^5.0.4",
+        "lodash": "^4.17.15",
         "popper.js": "^1.12",
-        "react": "^16.2.0",
-        "react-dom": "^16.2.0",
         "pusher-js": "^4.2.2",
-        "simple-peer": "^9.0.0"
+        "react": "^16.2.0",
+        "react-dom": "^16.13.1",
+        "simple-peer": "^9.7.2"
     },
-      "engines": {
-    "node": "10.x"
+    "engines": {
+        "node": "12.x"
     }
 }

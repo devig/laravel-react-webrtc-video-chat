@@ -46,7 +46,7 @@ export default class App extends Component {
     setupPusher() {
         this.pusher = new Pusher(APP_KEY, {
             authEndpoint: '/pusher/auth',
-            cluster: 'ap2',
+            cluster: 'eu',
             auth: {
                 params: this.user.id,
                 headers: {

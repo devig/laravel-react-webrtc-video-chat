@@ -1,5 +1,9 @@
 <?php
-
+$url = parse_url(getenv("DATABASE_URL"));
+$host = $url["host"] ?? null;
+$username = $url["user"] ?? null;
+$password = $url["pass"] ?? null;
+$database = substr($url["path"],1) ?? null;
 return [
 
     /*
@@ -65,6 +69,19 @@ return [
             'prefix' => '',
             'schema' => 'public',
             'sslmode' => 'prefer',
+        ],
+        
+        'pgsql_prod' => [
+            'driver' => 'pgsql',
+            'host' => $host,
+            'port' => env('DB_PORT', '5432'),
+            'database' => $database,
+            'username' => $username,
+            'password' => $password,
+            'charset' => 'utf8',
+            'prefix' => '',
+            'schema' => 'public',
+            //'sslmode' => 'prefer',
         ],
 
         'sqlsrv' => [

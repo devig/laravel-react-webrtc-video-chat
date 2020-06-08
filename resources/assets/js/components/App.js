@@ -4,7 +4,7 @@ import MediaHandler from '../MediaHandler';
 import Pusher from 'pusher-js';
 import Peer from 'simple-peer';
 
-const APP_KEY = '83c9614fa128f8d6027a';
+const APP_KEY = '40266c7301d412c6a555';
 
 export default class App extends Component {
     constructor() {

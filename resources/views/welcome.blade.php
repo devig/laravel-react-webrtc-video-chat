@@ -83,10 +83,6 @@
                 </div>
 
                 <div class="links">
-                @php
-                echo $_SERVER['HTTPS']; echo '<br>';
-                echo $_SERVER['HTTP_X_FORWARDED_PROTO'];
-                @endphp
 
                 </div>
             </div>
